@@ -4,7 +4,7 @@ import pytest
 import importlib
 
 # importing objects from the jupyter notebook here
-from ipynb.fs.full.index import slices_of_pie, slices_eaten, time_for_breakfast, number_of_cooked_pancakes, line_of_hungry_patrons, fed_patrons, first_dog_person, iteration_count, cat_owners, thirty_something_yr_old, dog_owner_names, dog_names, cat_owner_names, cat_names, list_of_odd_numbers_plus_ten
+from ipynb.fs.full.index import slices_of_pie, slices_eaten, time_for_breakfast, number_of_cooked_pancakes, line_of_hungry_patrons, fed_patrons, first_dog_person, iteration_count, cat_owners, thirty_something_yr_old, dog_owner_names, dog_names, list_of_odd_numbers_plus_ten
 
 # tests to ensure correct environment is loaded
 def test_conda_environment_activated():
@@ -48,14 +48,6 @@ def test_dog_owner_names():
 def test_dog_names():
     assert type(dog_names) == type([])
     assert dog_names == ['Frank', 'Gabby', 'Helen']
-
-def test_cat_owner_names():
-    assert type(cat_owner_names) == type([])
-    assert cat_owner_names == ['Daniel', 'Owen', 'Josh']
-
-def test_cat_names():
-    assert type(cat_names) == type([])
-    assert cat_names == ['Gato', 'Cosmo', 'Chat']
 
 def test_list_of_odd_numbers_plus_ten():
     assert type(list_of_odd_numbers_plus_ten) == type([])
